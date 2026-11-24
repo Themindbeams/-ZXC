@@ -1,0 +1,6 @@
+{
+  "name": "ZEEX Commerce",
+  "description": "Universal Business Operating System & ERP — customizable multi-tenant platform with double-entry accounting, automated workflows, and industry workspaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

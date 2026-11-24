@@ -1,0 +1,1842 @@
+{
+  "tenants": [
+    {
+      "id": "tenant_apex",
+      "name": "Apex Horizon Enterprises Group",
+      "slug": "apex-horizon",
+      "createdAt": "2026-01-10T00:00:00Z",
+      "status": "Active",
+      "activeModules": [
+        "organization",
+        "accounting",
+        "treasury",
+        "payroll",
+        "hr",
+        "retail",
+        "automotive",
+        "agribusiness",
+        "logistics",
+        "fuel",
+        "inventory",
+        "procurement",
+        "customization",
+        "audit"
+      ],
+      "demoMode": false
+    },
+    {
+      "id": "tenant_solaris",
+      "name": "Solaris Global Trading Ltd",
+      "slug": "solaris-global",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "status": "Active",
+      "activeModules": [
+        "organization",
+        "accounting",
+        "retail",
+        "inventory"
+      ],
+      "demoMode": true
+    }
+  ],
+  "legalEntities": [
+    {
+      "id": "entity_apex_ng",
+      "tenantId": "tenant_apex",
+      "legalName": "Apex Commercial Services Nigeria Ltd",
+      "tradeName": "Apex Commerce NG",
+      "registrationNumber": "RC-1849204",
+      "taxIdentificationNumber": "TIN-9840281-001",
+      "country": "Nigeria",
+      "functionalCurrency": "NGN",
+      "createdAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "entity_apex_uk",
+      "tenantId": "tenant_apex",
+      "legalName": "Apex Trade International UK Ltd",
+      "tradeName": "Apex International",
+      "registrationNumber": "UK-12940291",
+      "taxIdentificationNumber": "GB-99201928",
+      "country": "United Kingdom",
+      "functionalCurrency": "GBP",
+      "createdAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "entity_solaris_ng",
+      "tenantId": "tenant_solaris",
+      "legalName": "Solaris West Africa Ltd",
+      "tradeName": "Solaris West Africa",
+      "registrationNumber": "RC-2938102",
+      "taxIdentificationNumber": "TIN-7728192-002",
+      "country": "Nigeria",
+      "functionalCurrency": "NGN",
+      "createdAt": "2026-02-01T00:00:00Z"
+    }
+  ],
+  "branches": [
+    {
+      "id": "branch_vi",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Victoria Island Central Hub",
+      "code": "VI-01",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "operatingCurrency": "NGN",
+      "isHeadquarters": true,
+      "status": "Active"
+    },
+    {
+      "id": "branch_abj",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Central Business District Branch",
+      "code": "ABJ-02",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "operatingCurrency": "NGN",
+      "isHeadquarters": false,
+      "status": "Active"
+    },
+    {
+      "id": "branch_lon",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_uk",
+      "name": "Canary Wharf Trade Office",
+      "code": "LON-03",
+      "city": "London",
+      "country": "United Kingdom",
+      "operatingCurrency": "GBP",
+      "isHeadquarters": false,
+      "status": "Active"
+    },
+    {
+      "id": "branch_solaris_ikeja",
+      "tenantId": "tenant_solaris",
+      "legalEntityId": "entity_solaris_ng",
+      "name": "Ikeja Depot Branch",
+      "code": "SOL-IKJ",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "operatingCurrency": "NGN",
+      "isHeadquarters": true,
+      "status": "Active"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept_exec",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Executive Leadership",
+      "code": "EXEC"
+    },
+    {
+      "id": "dept_fin",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Finance & Accounts",
+      "code": "FIN"
+    },
+    {
+      "id": "dept_hr",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "People & Compensation",
+      "code": "HR"
+    },
+    {
+      "id": "dept_retail",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Retail Storefront",
+      "code": "RET"
+    },
+    {
+      "id": "dept_workshop",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Automotive Engineering",
+      "code": "AUTO"
+    },
+    {
+      "id": "dept_agri",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Commercial Agriculture",
+      "code": "AGRI"
+    },
+    {
+      "id": "dept_logistics",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Fleet Logistics",
+      "code": "LOG"
+    },
+    {
+      "id": "dept_fuel",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "name": "Energy & Fuel Operations",
+      "code": "FUEL"
+    }
+  ],
+  "warehouseLocations": [
+    {
+      "id": "loc_vi_store",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "code": "VI-STORE",
+      "name": "VI Retail Front Counter",
+      "type": "Storefront"
+    },
+    {
+      "id": "loc_vi_wh",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "code": "VI-MAIN-WH",
+      "name": "VI Central Warehouse",
+      "type": "Warehouse"
+    },
+    {
+      "id": "loc_workshop_bay",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "code": "AUTO-BAY-01",
+      "name": "Workshop Fast Spares Bay",
+      "type": "ServiceBay"
+    },
+    {
+      "id": "loc_kaduna_silo",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "code": "SILO-02",
+      "name": "Kaduna Grain Depot Silo 02",
+      "type": "Silo"
+    },
+    {
+      "id": "loc_abj_wh",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "code": "ABJ-WH-01",
+      "name": "Abuja Regional Depot",
+      "type": "Depot"
+    },
+    {
+      "id": "loc_solaris_wh",
+      "tenantId": "tenant_solaris",
+      "legalEntityId": "entity_solaris_ng",
+      "branchId": "branch_solaris_ikeja",
+      "code": "SOL-WH-01",
+      "name": "Solaris Ikeja Depot",
+      "type": "Warehouse"
+    }
+  ],
+  "operatingUnits": [
+    {
+      "id": "unit_till_01",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_vi",
+      "type": "Till",
+      "code": "TILL-01",
+      "name": "Storefront Main POS Register",
+      "status": "Available"
+    },
+    {
+      "id": "unit_till_02",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_vi",
+      "type": "Till",
+      "code": "TILL-02",
+      "name": "Customer Express Register",
+      "status": "Available"
+    },
+    {
+      "id": "unit_bay_01",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_vi",
+      "type": "ServiceBay",
+      "code": "BAY-01",
+      "name": "Hydraulic Lift Bay 01",
+      "status": "Active"
+    },
+    {
+      "id": "unit_bay_02",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_vi",
+      "type": "ServiceBay",
+      "code": "BAY-02",
+      "name": "Diagnostic & Electric Bay 02",
+      "status": "Available"
+    },
+    {
+      "id": "unit_plot_alpha",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_abj",
+      "type": "FarmPlot",
+      "code": "PLOT-ALPHA",
+      "name": "Commercial Plot Block Alpha (50 Ha)",
+      "status": "Active"
+    },
+    {
+      "id": "unit_plot_beta",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_abj",
+      "type": "FarmPlot",
+      "code": "PLOT-BETA",
+      "name": "Irrigated Soya Block Beta (75 Ha)",
+      "status": "Active"
+    },
+    {
+      "id": "unit_truck_01",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_vi",
+      "type": "FleetVehicle",
+      "code": "TRK-30T-01",
+      "name": "Mack 30T Heavy Hauler (LND-482-XA)",
+      "status": "Active"
+    },
+    {
+      "id": "unit_truck_02",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_vi",
+      "type": "FleetVehicle",
+      "code": "TRK-10T-02",
+      "name": "Mercedes 10T Refrigerated Van (ABC-912-LG)",
+      "status": "Available"
+    },
+    {
+      "id": "unit_pump_01",
+      "tenantId": "tenant_apex",
+      "branchId": "branch_abj",
+      "type": "FuelPump",
+      "code": "PUMP-ISLAND-01",
+      "name": "Dual Nozzle Island 01 (PMS/AGO)",
+      "status": "Active"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_sarah",
+      "tenantId": "tenant_apex",
+      "username": "sarah.director",
+      "email": "sarah.chen@apexhorizon.com",
+      "fullName": "Sarah Chen, FCA",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Executive Leadership",
+      "status": "Active",
+      "mfaEnabled": true,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-10T00:00:00Z",
+      "lastLoginAt": "2026-10-15T13:10:14.043Z",
+      "lastLoginIp": "192.168.1.10"
+    },
+    {
+      "id": "usr_tariq",
+      "tenantId": "tenant_apex",
+      "username": "tariq.cfo",
+      "email": "tariq.mansoor@apexhorizon.com",
+      "fullName": "Tariq Al-Mansoor",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Finance & Accounts",
+      "status": "Active",
+      "mfaEnabled": true,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-10T00:00:00Z",
+      "lastLoginAt": "2026-10-15T13:10:14.090Z",
+      "lastLoginIp": "192.168.1.11"
+    },
+    {
+      "id": "usr_folake",
+      "tenantId": "tenant_apex",
+      "username": "folake.payroll",
+      "email": "folake.adeleke@apexhorizon.com",
+      "fullName": "Barr. Folake Adeleke",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "People & Compensation",
+      "status": "Active",
+      "mfaEnabled": true,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-12T00:00:00Z",
+      "lastLoginAt": "2026-10-15T13:10:14.184Z",
+      "lastLoginIp": "192.168.1.13"
+    },
+    {
+      "id": "usr_chioma",
+      "tenantId": "tenant_apex",
+      "username": "chioma.cashier",
+      "email": "chioma.okonkwo@apexhorizon.com",
+      "fullName": "Chioma Okonkwo",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Retail Storefront",
+      "status": "Active",
+      "mfaEnabled": false,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-15T00:00:00Z",
+      "lastLoginAt": "2026-10-15T13:10:14.137Z",
+      "lastLoginIp": "192.168.1.12"
+    },
+    {
+      "id": "usr_ade",
+      "tenantId": "tenant_apex",
+      "username": "ade.technician",
+      "email": "ade.babalola@apexhorizon.com",
+      "fullName": "Adekunle Babalola",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Automotive Engineering",
+      "status": "Active",
+      "mfaEnabled": false,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "usr_ibrahim",
+      "tenantId": "tenant_apex",
+      "username": "ibrahim.dispatcher",
+      "email": "ibrahim.garba@apexhorizon.com",
+      "fullName": "Mallam Ibrahim Garba",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Fleet Logistics",
+      "status": "Active",
+      "mfaEnabled": false,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "usr_haruna",
+      "tenantId": "tenant_apex",
+      "username": "haruna.agronomist",
+      "email": "haruna.bello@apexhorizon.com",
+      "fullName": "Dr. Haruna Bello",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Commercial Agriculture",
+      "status": "Active",
+      "mfaEnabled": false,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "usr_amina",
+      "tenantId": "tenant_apex",
+      "username": "amina.branchmanager",
+      "email": "amina.sanusi@apexhorizon.com",
+      "fullName": "Hajia Amina Sanusi",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Management",
+      "status": "Active",
+      "mfaEnabled": true,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-01-15T00:00:00Z",
+      "lastLoginAt": "2026-10-15T13:10:14.229Z",
+      "lastLoginIp": "192.168.1.14"
+    },
+    {
+      "id": "usr_solaris_admin",
+      "tenantId": "tenant_solaris",
+      "username": "solaris.admin",
+      "email": "admin@solarisglobal.com",
+      "fullName": "Marcus Vance",
+      "passwordHash": "251db36e943634fb685fae8ed91262e1dbaf70764a138d64eea18d65bf1c9f1507f4b044d293971a534dab1d846d6dc697a800fa8bd1e79dae2a1b43ace83c65",
+      "salt": "d3ae089be161c3625bfb370676d3e43f",
+      "primaryDepartment": "Executive",
+      "status": "Active",
+      "mfaEnabled": false,
+      "failedLoginAttempts": 0,
+      "createdAt": "2026-02-01T00:00:00Z",
+      "lastLoginAt": "2026-10-15T13:10:14.276Z",
+      "lastLoginIp": "192.168.1.15"
+    }
+  ],
+  "roleAssignments": [
+    {
+      "id": "ra_sarah",
+      "userId": "usr_sarah",
+      "tenantId": "tenant_apex",
+      "role": "OwnerDirector",
+      "grantedBy": "SYSTEM",
+      "grantedAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "ra_tariq",
+      "userId": "usr_tariq",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "role": "Accountant",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "ra_folake",
+      "userId": "usr_folake",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "role": "PayrollOfficer",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-12T00:00:00Z"
+    },
+    {
+      "id": "ra_chioma",
+      "userId": "usr_chioma",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "role": "Cashier",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "ra_ade",
+      "userId": "usr_ade",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "role": "Technician",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "ra_ibrahim",
+      "userId": "usr_ibrahim",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "role": "Dispatcher",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "ra_haruna",
+      "userId": "usr_haruna",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "role": "BranchManager",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "ra_amina",
+      "userId": "usr_amina",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "role": "BranchManager",
+      "grantedBy": "usr_sarah",
+      "grantedAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "ra_solaris",
+      "userId": "usr_solaris_admin",
+      "tenantId": "tenant_solaris",
+      "role": "OrgAdmin",
+      "grantedBy": "SYSTEM",
+      "grantedAt": "2026-02-01T00:00:00Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "sess_1792069813993_2fbaf458",
+      "token": "edb025f6e92451d29f999c8e993235713b45bc98cf914ca69f2965a863731912",
+      "userId": "usr_sarah",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "activeBranchId": "branch_vi",
+      "ipAddress": "192.168.1.10",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:13.931Z",
+      "lastActiveAt": "2026-10-15T13:10:14.042Z",
+      "expiresAt": "2026-10-16T01:10:13.931Z",
+      "status": "Revoked"
+    },
+    {
+      "id": "sess_1792069814089_0745fcec",
+      "token": "d830051d9e4c97e4ea61133e34df45ce6b93e908c6b05aeb966311d0dffa6070",
+      "userId": "usr_sarah",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "activeBranchId": "branch_abj",
+      "ipAddress": "192.168.1.10",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:14.043Z",
+      "lastActiveAt": "2026-10-15T13:10:14.323Z",
+      "expiresAt": "2026-10-16T01:10:14.043Z",
+      "status": "Active"
+    },
+    {
+      "id": "sess_1792069814136_39f43da6",
+      "token": "d9ab1a0fb311fb495ef7605fc72a2d700addb02b07761e966bde63b27b81c581",
+      "userId": "usr_tariq",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "activeBranchId": "branch_vi",
+      "ipAddress": "192.168.1.11",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:14.090Z",
+      "lastActiveAt": "2026-10-15T13:10:14.090Z",
+      "expiresAt": "2026-10-16T01:10:14.090Z",
+      "status": "Active"
+    },
+    {
+      "id": "sess_1792069814182_f068f9e6",
+      "token": "b72a321ebd358306096022f783b2a4ee08054070c4e5b0a892d6ef83522e76eb",
+      "userId": "usr_chioma",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "activeBranchId": "branch_vi",
+      "ipAddress": "192.168.1.12",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:14.137Z",
+      "lastActiveAt": "2026-10-15T13:10:14.323Z",
+      "expiresAt": "2026-10-16T01:10:14.137Z",
+      "status": "Active"
+    },
+    {
+      "id": "sess_1792069814228_f5b7e4b3",
+      "token": "757d2dcab5f61494bdb4a5b8e57e9354926b01caf5f49b1836b8418bfba659ff",
+      "userId": "usr_folake",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "activeBranchId": "branch_vi",
+      "ipAddress": "192.168.1.13",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:14.184Z",
+      "lastActiveAt": "2026-10-15T13:10:14.184Z",
+      "expiresAt": "2026-10-16T01:10:14.184Z",
+      "status": "Active"
+    },
+    {
+      "id": "sess_1792069814275_38cdf451",
+      "token": "903a46371d80bf1bfc2242db796ff575c80751ae5ec2d89b88add5c0806b3829",
+      "userId": "usr_amina",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "activeBranchId": "branch_abj",
+      "ipAddress": "192.168.1.14",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:14.229Z",
+      "lastActiveAt": "2026-10-15T13:10:14.229Z",
+      "expiresAt": "2026-10-16T01:10:14.229Z",
+      "status": "Active"
+    },
+    {
+      "id": "sess_1792069814321_f1f15302",
+      "token": "78d99e41055fbfb98d90147f84acb07980a04c9e3a2f86ca22084ccd5151d9f6",
+      "userId": "usr_solaris_admin",
+      "tenantId": "tenant_solaris",
+      "legalEntityId": "entity_solaris_ng",
+      "activeBranchId": "branch_solaris_ikeja",
+      "ipAddress": "192.168.1.15",
+      "userAgent": "TestAgent/1.0",
+      "createdAt": "2026-10-15T13:10:14.276Z",
+      "lastActiveAt": "2026-10-15T13:10:14.276Z",
+      "expiresAt": "2026-10-16T01:10:14.276Z",
+      "status": "Active"
+    }
+  ],
+  "auditRecords": [
+    {
+      "id": "aud_1792069814322_83604e",
+      "tenantId": "tenant_solaris",
+      "actorUserId": "usr_solaris_admin",
+      "actorName": "Marcus Vance",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069814321_f1f15302",
+      "changesSummary": "Logged in from 192.168.1.15 to Ikeja Depot Branch",
+      "ipAddress": "192.168.1.15",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.322Z"
+    },
+    {
+      "id": "aud_1792069814276_849ea7",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_amina",
+      "actorName": "Hajia Amina Sanusi",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069814275_38cdf451",
+      "changesSummary": "Logged in from 192.168.1.14 to Central Business District Branch",
+      "ipAddress": "192.168.1.14",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.276Z"
+    },
+    {
+      "id": "aud_1792069814229_323edf",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_folake",
+      "actorName": "Barr. Folake Adeleke",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069814228_f5b7e4b3",
+      "changesSummary": "Logged in from 192.168.1.13 to Victoria Island Central Hub",
+      "ipAddress": "192.168.1.13",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.229Z"
+    },
+    {
+      "id": "aud_1792069814183_41b2ad",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_chioma",
+      "actorName": "Chioma Okonkwo",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069814182_f068f9e6",
+      "changesSummary": "Logged in from 192.168.1.12 to Victoria Island Central Hub",
+      "ipAddress": "192.168.1.12",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.183Z"
+    },
+    {
+      "id": "aud_1792069814136_4a87f3",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_tariq",
+      "actorName": "Tariq Al-Mansoor",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069814136_39f43da6",
+      "changesSummary": "Logged in from 192.168.1.11 to Victoria Island Central Hub",
+      "ipAddress": "192.168.1.11",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.137Z"
+    },
+    {
+      "id": "aud_1792069814089_1cbcbf",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_sarah",
+      "actorName": "Sarah Chen, FCA",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069814089_0745fcec",
+      "changesSummary": "Logged in from 192.168.1.10 to Victoria Island Central Hub",
+      "ipAddress": "192.168.1.10",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.089Z"
+    },
+    {
+      "id": "aud_1792069814043_9a1048",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_sarah",
+      "actorName": "System",
+      "action": "SESSION_REVOKED",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069813993_2fbaf458",
+      "changesSummary": "Session revoked by user usr_sarah",
+      "ipAddress": "192.168.1.10",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:14.043Z"
+    },
+    {
+      "id": "aud_1792069814042_aa8c96",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_sarah",
+      "actorName": "Sarah Chen, FCA",
+      "action": "AUTH_PASSWORD_FAILED",
+      "targetEntity": "User",
+      "targetId": "usr_sarah",
+      "changesSummary": "Failed password attempt (1/5).",
+      "ipAddress": "192.168.1.10",
+      "status": "Denied",
+      "timestamp": "2026-10-15T13:10:14.042Z"
+    },
+    {
+      "id": "aud_1792069813993_e030ac",
+      "tenantId": "tenant_apex",
+      "actorUserId": "usr_sarah",
+      "actorName": "Sarah Chen, FCA",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "targetEntity": "Session",
+      "targetId": "sess_1792069813993_2fbaf458",
+      "changesSummary": "Logged in from 192.168.1.10 to Victoria Island Central Hub",
+      "ipAddress": "192.168.1.10",
+      "status": "Success",
+      "timestamp": "2026-10-15T13:10:13.993Z"
+    }
+  ],
+  "fiscalPeriods": [
+    {
+      "id": "fp_2026_q3",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "periodName": "2026-Q3 (Jul - Sep)",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "isLocked": true,
+      "lockedAt": "2026-10-01T00:00:00Z",
+      "lockedBy": "usr_sarah"
+    },
+    {
+      "id": "fp_2026_q4",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "periodName": "2026-Q4 (Oct - Dec)",
+      "startDate": "2026-10-01",
+      "endDate": "2026-12-31",
+      "isLocked": false
+    }
+  ],
+  "accounts": [
+    {
+      "id": "coa_1010",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "1010",
+      "name": "Cash on Hand & Register Tills",
+      "type": "Asset",
+      "subCategory": "CashAndEquivalents",
+      "currency": "NGN",
+      "balanceMinorUnits": 85000000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_1020",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "1020",
+      "name": "Operating Bank Account (Commercial Checking)",
+      "type": "Asset",
+      "subCategory": "CashAndEquivalents",
+      "currency": "NGN",
+      "balanceMinorUnits": 3684100000,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_1030",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "1030",
+      "name": "Accounts Receivable (Trade Debtors)",
+      "type": "Asset",
+      "subCategory": "Receivables",
+      "currency": "NGN",
+      "balanceMinorUnits": 1401800000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_1050",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "1050",
+      "name": "Merchandise Inventory Asset",
+      "type": "Asset",
+      "subCategory": "Inventory",
+      "currency": "NGN",
+      "balanceMinorUnits": 1450000000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_1060",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "1060",
+      "name": "Silo Grain & Produce Stock Asset",
+      "type": "Asset",
+      "subCategory": "Inventory",
+      "currency": "NGN",
+      "balanceMinorUnits": 985600000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_2010",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "2010",
+      "name": "Accounts Payable (Trade Creditors)",
+      "type": "Liability",
+      "subCategory": "Payables",
+      "currency": "NGN",
+      "balanceMinorUnits": -404400000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_2020",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "2020",
+      "name": "Customer Retainers & Unearned Revenue",
+      "type": "Liability",
+      "subCategory": "Payables",
+      "currency": "NGN",
+      "balanceMinorUnits": -180000000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_2030",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "2030",
+      "name": "Statutory PAYE Tax Payable",
+      "type": "Liability",
+      "subCategory": "TaxesPayable",
+      "currency": "NGN",
+      "balanceMinorUnits": 15500000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_2040",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "2040",
+      "name": "Pension Fund Contribution Payable",
+      "type": "Liability",
+      "subCategory": "Payables",
+      "currency": "NGN",
+      "balanceMinorUnits": 11600000,
+      "isControlAccount": true
+    },
+    {
+      "id": "coa_3010",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "3010",
+      "name": "Owner Capital & Retained Earnings",
+      "type": "Equity",
+      "subCategory": "Equity",
+      "currency": "NGN",
+      "balanceMinorUnits": -6643000000,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_4010",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "4010",
+      "name": "Retail Storefront Sales Revenue",
+      "type": "Revenue",
+      "subCategory": "OperatingRevenue",
+      "currency": "NGN",
+      "balanceMinorUnits": 0,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_4020",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "4020",
+      "name": "Automotive Workshop Service Revenue",
+      "type": "Revenue",
+      "subCategory": "OperatingRevenue",
+      "currency": "NGN",
+      "balanceMinorUnits": 6800000,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_4030",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "4030",
+      "name": "Agricultural Produce Sales Revenue",
+      "type": "Revenue",
+      "subCategory": "OperatingRevenue",
+      "currency": "NGN",
+      "balanceMinorUnits": 325000000,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_4040",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "4040",
+      "name": "Freight Logistics Haulage Revenue",
+      "type": "Revenue",
+      "subCategory": "OperatingRevenue",
+      "currency": "NGN",
+      "balanceMinorUnits": 420000000,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_5010",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "5010",
+      "name": "Cost of Goods Sold (Retail COGS)",
+      "type": "Expense",
+      "subCategory": "CostOfSales",
+      "currency": "NGN",
+      "balanceMinorUnits": 0,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_5020",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "5020",
+      "name": "Automotive Parts & Consumables Cost",
+      "type": "Expense",
+      "subCategory": "CostOfSales",
+      "currency": "NGN",
+      "balanceMinorUnits": 0,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_5040",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "5040",
+      "name": "Freight Fuel & Route Running Cost",
+      "type": "Expense",
+      "subCategory": "DirectExpense",
+      "currency": "NGN",
+      "balanceMinorUnits": 0,
+      "isControlAccount": false
+    },
+    {
+      "id": "coa_6010",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "code": "6010",
+      "name": "Staff Salaries & Compensation Expense",
+      "type": "Expense",
+      "subCategory": "OperatingExpense",
+      "currency": "NGN",
+      "balanceMinorUnits": 670000000,
+      "isControlAccount": false
+    }
+  ],
+  "journalEntries": [
+    {
+      "id": "jnl_1792069814329",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "entryNumber": "JNL-2026-00107",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "payroll",
+      "sourceReference": "pr_scen_01",
+      "lines": [
+        {
+          "id": "jl_1792069814329_0",
+          "accountId": "coa_6010",
+          "accountCode": "6010",
+          "debitMinorUnits": 670000000,
+          "creditMinorUnits": 0,
+          "memo": "Gross Salaries Expense"
+        },
+        {
+          "id": "jl_1792069814329_1",
+          "accountId": "coa_2030",
+          "accountCode": "2030",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 100500000,
+          "memo": "PAYE Tax Payable"
+        },
+        {
+          "id": "jl_1792069814329_2",
+          "accountId": "coa_2040",
+          "accountCode": "2040",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 53600000,
+          "memo": "Pension Contribution Payable"
+        },
+        {
+          "id": "jl_1792069814329_3",
+          "accountId": "coa_1020",
+          "accountCode": "1020",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 515900000,
+          "memo": "Net Salaries Bank Disbursement"
+        }
+      ],
+      "memo": "Summarized Payroll Journal — October 2026 (4 Staff)",
+      "status": "Posted",
+      "isReversal": false,
+      "createdBy": "usr_folake",
+      "postedAt": "2026-10-15T13:10:14.329Z",
+      "totalDebitMinor": 670000000,
+      "totalCreditMinor": 670000000
+    },
+    {
+      "id": "jnl_1792069814329",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "entryNumber": "JNL-2026-00106",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "logistics",
+      "sourceReference": "TRP-SCEN-401",
+      "lines": [
+        {
+          "id": "jl_1792069814329_0",
+          "accountId": "coa_1030",
+          "accountCode": "1030",
+          "debitMinorUnits": 420000000,
+          "creditMinorUnits": 0,
+          "memo": "Consignee Freight AR"
+        },
+        {
+          "id": "jl_1792069814329_1",
+          "accountId": "coa_4040",
+          "accountCode": "4040",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 420000000,
+          "memo": "Freight Haulage Revenue"
+        }
+      ],
+      "memo": "Freight Delivery Completed — POD Signed by Alhaji Sanusi, Logistics Receiving Officer",
+      "status": "Posted",
+      "isReversal": false,
+      "createdBy": "usr_sarah",
+      "postedAt": "2026-10-15T13:10:14.329Z",
+      "totalDebitMinor": 420000000,
+      "totalCreditMinor": 420000000
+    },
+    {
+      "id": "jnl_1792069814328",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "entryNumber": "JNL-2026-00105",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "agribusiness",
+      "sourceReference": "AGR-SALE-701",
+      "lines": [
+        {
+          "id": "jl_1792069814328_0",
+          "accountId": "coa_1030",
+          "accountCode": "1030",
+          "debitMinorUnits": 325000000,
+          "creditMinorUnits": 0,
+          "memo": "Customer AR"
+        },
+        {
+          "id": "jl_1792069814328_1",
+          "accountId": "coa_4030",
+          "accountCode": "4030",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 325000000,
+          "memo": "Agri Produce Sales Revenue"
+        }
+      ],
+      "memo": "Sale of Refined Produce — Lot OUT-FLOUR-LOT-9902",
+      "status": "Posted",
+      "isReversal": false,
+      "createdBy": "usr_sarah",
+      "postedAt": "2026-10-15T13:10:14.328Z",
+      "totalDebitMinor": 325000000,
+      "totalCreditMinor": 325000000
+    },
+    {
+      "id": "jnl_1792069814327",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "entryNumber": "JNL-2026-00104",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "agribusiness",
+      "sourceReference": "WB-SCEN-101",
+      "lines": [
+        {
+          "id": "jl_1792069814327_0",
+          "accountId": "coa_1060",
+          "accountCode": "1060",
+          "debitMinorUnits": 5600000,
+          "creditMinorUnits": 0,
+          "memo": "Silo Produce Inventory Asset"
+        },
+        {
+          "id": "jl_1792069814327_1",
+          "accountId": "coa_2010",
+          "accountCode": "2010",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 5600000,
+          "memo": "Farmer Payable"
+        }
+      ],
+      "memo": "Silo Intake from Farmer — Lot LOT-KADUNA-MAIZE-8821",
+      "status": "Posted",
+      "isReversal": false,
+      "createdBy": "usr_sarah",
+      "postedAt": "2026-10-15T13:10:14.327Z",
+      "totalDebitMinor": 5600000,
+      "totalCreditMinor": 5600000
+    },
+    {
+      "id": "jnl_1792069814327",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "entryNumber": "JNL-2026-00103",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "automotive",
+      "sourceReference": "JOB-SCEN-901",
+      "lines": [
+        {
+          "id": "jl_1792069814327_0",
+          "accountId": "coa_1030",
+          "accountCode": "1030",
+          "debitMinorUnits": 6800000,
+          "creditMinorUnits": 0,
+          "memo": "Customer Receivable"
+        },
+        {
+          "id": "jl_1792069814327_1",
+          "accountId": "coa_4020",
+          "accountCode": "4020",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 6800000,
+          "memo": "Workshop Service Revenue"
+        }
+      ],
+      "memo": "Automotive Handover Invoice — Audi A6 3.0T (KJA-381-EX)",
+      "status": "Posted",
+      "isReversal": false,
+      "createdBy": "usr_sarah",
+      "postedAt": "2026-10-15T13:10:14.327Z",
+      "totalDebitMinor": 6800000,
+      "totalCreditMinor": 6800000
+    },
+    {
+      "id": "jnl_1792069814325",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "entryNumber": "JNL-2026-00102",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "accounting",
+      "sourceReference": "REV-JNL-2026-00101",
+      "lines": [
+        {
+          "id": "jl_1792069814325_0",
+          "accountId": "coa_1010",
+          "accountCode": "1010",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 150000,
+          "memo": "Reversal of JNL-2026-00101: Valid balanced cash sale"
+        },
+        {
+          "id": "jl_1792069814325_1",
+          "accountId": "coa_4010",
+          "accountCode": "4010",
+          "debitMinorUnits": 150000,
+          "creditMinorUnits": 0,
+          "memo": "Reversal of JNL-2026-00101: Valid balanced cash sale"
+        }
+      ],
+      "memo": "REVERSAL of JNL-2026-00101 — Customer cancelled invoice",
+      "status": "Posted",
+      "isReversal": true,
+      "createdBy": "usr_sarah",
+      "postedAt": "2026-10-15T13:10:14.325Z",
+      "totalDebitMinor": 150000,
+      "totalCreditMinor": 150000,
+      "reversedJournalId": "jnl_1792069814324"
+    },
+    {
+      "id": "jnl_1792069814324",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "entryNumber": "JNL-2026-00101",
+      "date": "2026-10-15",
+      "fiscalPeriodId": "fp_2026_q4",
+      "sourceModule": "accounting",
+      "sourceReference": "TEST-BALANCED-01",
+      "lines": [
+        {
+          "id": "jl_1792069814324_0",
+          "accountId": "coa_1010",
+          "accountCode": "1010",
+          "debitMinorUnits": 150000,
+          "creditMinorUnits": 0,
+          "memo": "Valid balanced cash sale"
+        },
+        {
+          "id": "jl_1792069814324_1",
+          "accountId": "coa_4010",
+          "accountCode": "4010",
+          "debitMinorUnits": 0,
+          "creditMinorUnits": 150000,
+          "memo": "Valid balanced cash sale"
+        }
+      ],
+      "memo": "Valid balanced cash sale",
+      "status": "Reversed",
+      "isReversal": false,
+      "createdBy": "usr_sarah",
+      "postedAt": "2026-10-15T13:10:14.324Z",
+      "totalDebitMinor": 150000,
+      "totalCreditMinor": 150000
+    }
+  ],
+  "bankAccounts": [
+    {
+      "id": "bank_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "accountName": "Zenith Treasury Operational Account",
+      "bankName": "Zenith Bank PLC",
+      "accountNumberMasked": "••••••••1048",
+      "glAccountId": "coa_1020",
+      "currency": "NGN",
+      "balanceMinorUnits": 4200000000,
+      "status": "Connected_Sandbox",
+      "lastReconciledDate": "2026-10-14"
+    }
+  ],
+  "payoutRules": [
+    {
+      "id": "rule_apex_ngn",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "currency": "NGN",
+      "dualApprovalThresholdMinor": 50000000,
+      "allowSelfApproval": false,
+      "maxSelfApprovalLimitMinor": 0
+    },
+    {
+      "id": "rule_apex_usd",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "currency": "USD",
+      "dualApprovalThresholdMinor": 100000,
+      "allowSelfApproval": false,
+      "maxSelfApprovalLimitMinor": 0
+    }
+  ],
+  "payouts": [
+    {
+      "id": "pay_test_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "beneficiaryName": "Auto Parts Importers Ltd",
+      "bankName": "First Bank",
+      "accountMasked": "••••1029",
+      "amountMinor": 65000000,
+      "currency": "NGN",
+      "purpose": "Bulk Parts Order",
+      "category": "Supplier",
+      "status": "PendingApproval",
+      "makerUserId": "usr_tariq",
+      "makerName": "Tariq Al-Mansoor",
+      "approvalPolicyVersion": "v2.1",
+      "idempotencyKey": "IDEM-TEST-01",
+      "createdAt": "2026-10-15T13:10:14.323Z"
+    }
+  ],
+  "retailProducts": [
+    {
+      "id": "prod_spark_plug",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "sku": "AUT-NGK-7740",
+      "barcode": "087295177402",
+      "name": "NGK Laser Iridium Spark Plug (Set of 4)",
+      "category": "Fast Moving Spares",
+      "unitOfMeasure": "box",
+      "costPriceMinor": 2400000,
+      "sellingPriceMinor": 3800000,
+      "stockByLocation": {
+        "loc_vi_store": 25,
+        "loc_vi_wh": 80,
+        "loc_workshop_bay": 15
+      },
+      "totalStock": 119,
+      "reorderLevel": 30,
+      "taxRatePercent": 7.5,
+      "allowNegativeStock": false
+    },
+    {
+      "id": "prod_engine_oil",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "sku": "OIL-MOB-5W30",
+      "barcode": "071924149723",
+      "name": "Mobil 1 Full Synthetic 5W-30 (5L Jug)",
+      "category": "Lubricants & Fluids",
+      "unitOfMeasure": "pcs",
+      "costPriceMinor": 3200000,
+      "sellingPriceMinor": 4850000,
+      "stockByLocation": {
+        "loc_vi_store": 18,
+        "loc_vi_wh": 45,
+        "loc_workshop_bay": 12
+      },
+      "totalStock": 75,
+      "reorderLevel": 20,
+      "taxRatePercent": 7.5,
+      "allowNegativeStock": false
+    },
+    {
+      "id": "prod_grain_flour",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "sku": "AGR-FLR-25KG",
+      "barcode": "615284920194",
+      "name": "Apex Golden Wheat Flour (25kg Bag)",
+      "category": "Processed Foodstuff",
+      "unitOfMeasure": "carton",
+      "costPriceMinor": 1850000,
+      "sellingPriceMinor": 2500000,
+      "stockByLocation": {
+        "loc_vi_store": 30,
+        "loc_vi_wh": 120
+      },
+      "totalStock": 150,
+      "reorderLevel": 25,
+      "taxRatePercent": 0,
+      "allowNegativeStock": false
+    }
+  ],
+  "purchaseOrders": [],
+  "goodsReceipts": [],
+  "posShifts": [
+    {
+      "id": "shift_scenario_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "tillUnitId": "unit_till_01",
+      "tillNumber": "Till 01 Main Storefront",
+      "cashierUserId": "usr_chioma",
+      "cashierName": "Chioma Okonkwo",
+      "openedAt": "2026-10-15T13:10:14.326Z",
+      "openingFloatMinor": 1500000,
+      "cashCollectedMinor": 4000000,
+      "cardCollectedMinor": 3600000,
+      "transferCollectedMinor": 0,
+      "expectedCashMinor": 1700000,
+      "status": "Closed",
+      "ordersCount": 1,
+      "actualCashCountedMinor": 1700000,
+      "cashVarianceMinor": 0
+    }
+  ],
+  "posTransactions": [
+    {
+      "id": "txn_scen_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "shiftId": "shift_scenario_01",
+      "receiptNumber": "RCP-SCEN-001",
+      "cashierUserId": "usr_chioma",
+      "cashierName": "Chioma Okonkwo",
+      "timestamp": "2026-10-15T13:10:14.326Z",
+      "items": [
+        {
+          "productId": "prod_spark_plug",
+          "productName": "NGK Laser Iridium Spark Plug (Set of 4)",
+          "quantity": 2,
+          "unitPriceMinor": 3800000,
+          "taxMinor": 0,
+          "totalMinor": 7600000
+        }
+      ],
+      "subtotalMinor": 7600000,
+      "taxMinor": 0,
+      "totalMinor": 7600000,
+      "tenderSplit": {
+        "cashMinor": 4000000,
+        "cardMinor": 3600000,
+        "bankTransferMinor": 0
+      },
+      "bankTransferStatus": "NotApplicable",
+      "isRefunded": true,
+      "refundedAmountMinor": 3800000
+    }
+  ],
+  "retailReturns": [],
+  "vehicles": [
+    {
+      "id": "veh_01",
+      "tenantId": "tenant_apex",
+      "vin": "WAUZZZ4G1EN029481",
+      "licensePlate": "KJA-381-EX",
+      "make": "Audi",
+      "model": "A6 3.0T Quattro",
+      "year": 2021,
+      "ownerName": "Dr. Olatunji Adeleke",
+      "ownerPhone": "+2348039201948",
+      "ownerEmail": "olatunji.adeleke@medclinic.ng",
+      "currentMileageKm": 68420
+    },
+    {
+      "id": "veh_02",
+      "tenantId": "tenant_apex",
+      "vin": "JTEBU5JR8K5091823",
+      "licensePlate": "RSH-904-AA",
+      "make": "Toyota",
+      "model": "Prado TX-L V6",
+      "year": 2023,
+      "ownerName": "Alhaji Mansoor Bello",
+      "ownerPhone": "+2348021940291",
+      "currentMileageKm": 34100
+    }
+  ],
+  "jobCards": [
+    {
+      "id": "job_scen_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "jobCardNumber": "JOB-SCEN-901",
+      "vehicleId": "veh_01",
+      "vehicleSummary": "Audi A6 3.0T (KJA-381-EX)",
+      "customerName": "Dr. Olatunji Adeleke",
+      "customerPhone": "+2348039201948",
+      "serviceBayUnitId": "unit_bay_01",
+      "intakeMileageKm": 68420,
+      "intakeNotes": "Squeaking brake pads & rough idle",
+      "inspectionChecklist": [
+        {
+          "category": "Brakes",
+          "finding": "RequiresImmediateRepair",
+          "notes": "Front pads below 2mm"
+        },
+        {
+          "category": "EngineOil",
+          "finding": "Caution",
+          "notes": "Oil degraded"
+        }
+      ],
+      "estimates": [
+        {
+          "type": "Part",
+          "description": "NGK Spark Plugs Set",
+          "partId": "prod_spark_plug",
+          "quantity": 1,
+          "unitPriceMinor": 3800000,
+          "totalMinor": 3800000,
+          "isCustomerApproved": true
+        },
+        {
+          "type": "Labor",
+          "description": "Brake Overhaul & Spark Plug Installation",
+          "quantity": 2,
+          "unitPriceMinor": 1500000,
+          "totalMinor": 3000000,
+          "isCustomerApproved": true
+        }
+      ],
+      "customerConsentTimestamp": "2026-10-15T13:10:14.327Z",
+      "customerAuthorizedBy": "Signed electronically by Dr. Adeleke",
+      "status": "InvoicedAndClosed",
+      "partsIssued": [
+        {
+          "partId": "prod_spark_plug",
+          "partName": "NGK Laser Iridium Spark Plug (Set of 4)",
+          "quantity": 1,
+          "issuedAt": "2026-10-15T13:10:14.327Z"
+        }
+      ],
+      "partsReturned": [],
+      "laborHoursLogged": 2.5,
+      "qualityCheckPassed": true,
+      "createdAt": "2026-10-15T13:10:14.327Z",
+      "qualityCheckNotes": "Road test completed; zero squeak; engine running smoothly.",
+      "completedAt": "2026-10-15T13:10:14.327Z"
+    }
+  ],
+  "farmPlots": [
+    {
+      "id": "plot_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "code": "KDN-PLT-01",
+      "name": "Kaduna Commercial Maize Block Alpha",
+      "sizeHectares": 50,
+      "soilType": "Loamy Alluvial",
+      "irrigationMethod": "Center Pivot Automated",
+      "currentCropSeason": "2026 Wet Season Grain Cycle"
+    },
+    {
+      "id": "plot_02",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "code": "KDN-PLT-02",
+      "name": "Zaria Soya Outgrower Nucleus Block",
+      "sizeHectares": 75,
+      "soilType": "Sandy Loam",
+      "irrigationMethod": "Drip Feed & Rainfed",
+      "currentCropSeason": "2026 Wet Season Soya Cycle"
+    }
+  ],
+  "cropCycles": [
+    {
+      "id": "cycle_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "plotId": "plot_01",
+      "cropName": "Yellow Maize Grain",
+      "variety": "SC 719 Hybrid",
+      "plantingDate": "2026-06-12",
+      "expectedHarvestDate": "2026-10-25",
+      "accumulatedInputCostsMinor": 1450000000,
+      "estimatedYieldKg": 280000,
+      "status": "Growing"
+    }
+  ],
+  "weighbridgeTickets": [
+    {
+      "id": "wb_scen_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "ticketNumber": "WB-SCEN-101",
+      "sourceType": "FarmerAggregationSupplier",
+      "supplierOrFarmerName": "Doma Farmers Cooperative",
+      "cropType": "Commercial Yellow Grain",
+      "grossWeightKg": 20000,
+      "tareWeightKg": 6000,
+      "netWeightKg": 14000,
+      "moisturePercent": 12.1,
+      "grade": "GradeA",
+      "pricePerKgMinor": 40000,
+      "totalPayableMinor": 5600000,
+      "destinationSiloLocationId": "loc_kaduna_silo",
+      "assignedLotNumber": "LOT-KADUNA-MAIZE-8821",
+      "intakeTimestamp": "2026-10-15T13:10:14.327Z"
+    }
+  ],
+  "processingBatches": [
+    {
+      "id": "prc_scen_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "batchNumber": "PRC-SCEN-501",
+      "productLine": "Grain Milling & Packaging",
+      "sourceLotNumbers": [
+        "LOT-KADUNA-MAIZE-8821"
+      ],
+      "consumedRawMaterialKg": 10000,
+      "finishedOutputKg": 9500,
+      "scrapOrLossKg": 500,
+      "processingCostMinor": 40000000,
+      "outputLotNumber": "OUT-FLOUR-LOT-9902",
+      "outputDestinationLocationId": "loc_vi_wh",
+      "qualityReleaseApproved": true,
+      "batchDate": "2026-10-15T13:10:14.328Z"
+    }
+  ],
+  "produceSales": [
+    {
+      "id": "sale_scen_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "saleNumber": "AGR-SALE-701",
+      "customerName": "Premier Bakery Alliance",
+      "cropOrProduct": "Refined Grain Flour",
+      "traceableLotNumber": "OUT-FLOUR-LOT-9902",
+      "quantitySoldKg": 5000,
+      "unitPriceMinor": 65000,
+      "totalRevenueMinor": 325000000,
+      "saleDate": "2026-10-15T13:10:14.328Z",
+      "deliveryStatus": "Delivered"
+    }
+  ],
+  "aquacultureTanks": [],
+  "freightVehicles": [
+    {
+      "id": "fveh_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "registrationNumber": "LND-482-XA",
+      "vehicleType": "HeavyHaulage30T",
+      "tonnageCapacity": 30,
+      "assignedDriverUserId": "usr_ibrahim",
+      "assignedDriverName": "Mallam Ibrahim Garba",
+      "odometerKm": 142800,
+      "status": "Available"
+    },
+    {
+      "id": "fveh_02",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "registrationNumber": "ABC-912-LG",
+      "vehicleType": "RefrigeratedVan",
+      "tonnageCapacity": 10,
+      "odometerKm": 89400,
+      "status": "Available"
+    }
+  ],
+  "freightTrips": [
+    {
+      "id": "trip_scen_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "tripNumber": "TRP-SCEN-401",
+      "vehicleId": "fveh_01",
+      "vehicleReg": "LND-482-XA (Mack 30T)",
+      "driverUserId": "usr_ibrahim",
+      "driverName": "Mallam Ibrahim Garba",
+      "originHub": "Lagos Victoria Island Central Depot",
+      "destinationHub": "Abuja CBD Logistics Depot",
+      "cargoManifest": "500 Bags Wheat Flour + 20 Engine Blocks",
+      "grossCargoWeightKg": 28000,
+      "agreedFreightRateMinor": 420000000,
+      "allocatedFuelAdvanceMinor": 95000000,
+      "actualTripExpensesMinor": 91500000,
+      "consigneeName": "Abuja Wholesale Hub",
+      "deliveryAddress": "Plot 402, Central Area, Abuja",
+      "departureTime": "2026-10-15T13:10:14.329Z",
+      "tripSettled": true,
+      "status": "Delivered_PODSigned",
+      "proofOfDeliverySignedBy": "Alhaji Sanusi, Logistics Receiving Officer",
+      "proofOfDeliveryTimestamp": "2026-10-15T13:10:14.329Z"
+    }
+  ],
+  "passengerTrips": [],
+  "fuelTanks": [
+    {
+      "id": "tank_pms_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "tankCode": "TNK-PMS-01",
+      "productType": "PMS_Petrol",
+      "totalCapacityLiters": 45000,
+      "currentStockLiters": 32400,
+      "waterDipCm": 0.1,
+      "lastDipDate": "2026-10-15"
+    },
+    {
+      "id": "tank_ago_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_abj",
+      "tankCode": "TNK-AGO-01",
+      "productType": "AGO_Diesel",
+      "totalCapacityLiters": 40000,
+      "currentStockLiters": 28900,
+      "waterDipCm": 0,
+      "lastDipDate": "2026-10-15"
+    }
+  ],
+  "fuelPumpShifts": [],
+  "employees": [
+    {
+      "id": "emp_01",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "employeeCode": "EMP-001",
+      "fullName": "Sarah Chen",
+      "email": "sarah.chen@apexhorizon.com",
+      "department": "Executive",
+      "role": "Group CFO",
+      "hireDate": "2024-03-01",
+      "status": "Active"
+    },
+    {
+      "id": "emp_02",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "employeeCode": "EMP-002",
+      "fullName": "Tariq Al-Mansoor",
+      "email": "tariq.mansoor@apexhorizon.com",
+      "department": "Finance",
+      "role": "Finance Director",
+      "hireDate": "2024-06-15",
+      "status": "Active"
+    },
+    {
+      "id": "emp_03",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "employeeCode": "EMP-003",
+      "fullName": "Chioma Okonkwo",
+      "email": "chioma.okonkwo@apexhorizon.com",
+      "department": "Retail",
+      "role": "Head Cashier",
+      "hireDate": "2025-01-10",
+      "status": "Active"
+    },
+    {
+      "id": "emp_04",
+      "tenantId": "tenant_apex",
+      "legalEntityId": "entity_apex_ng",
+      "branchId": "branch_vi",
+      "employeeCode": "EMP-004",
+      "fullName": "Adekunle Babalola",
+      "email": "ade.babalola@apexhorizon.com",
+      "department": "Automotive",
+      "role": "Master Workshop Technician",
+      "hireDate": "2024-08-01",
+      "status": "Active"
+    }
+  ],
+  "compensations": [
+    {
+      "employeeId": "emp_01",
+      "tenantId": "tenant_apex",
+      "baseSalaryMinor": 350000000,
+      "currency": "NGN",
+      "bankName": "Standard Chartered",
+      "accountNumberMasked": "••••••••4920",
+      "taxJurisdictionRuleId": "NG-LIRS-2026",
+      "payeTaxRatePercent": 19.5,
+      "pensionEmployeePercent": 8,
+      "pensionEmployerPercent": 10
+    },
+    {
+      "employeeId": "emp_02",
+      "tenantId": "tenant_apex",
+      "baseSalaryMinor": 220000000,
+      "currency": "NGN",
+      "bankName": "Zenith Bank",
+      "accountNumberMasked": "••••••••1940",
+      "taxJurisdictionRuleId": "NG-LIRS-2026",
+      "payeTaxRatePercent": 18,
+      "pensionEmployeePercent": 8,
+      "pensionEmployerPercent": 10
+    },
+    {
+      "employeeId": "emp_03",
+      "tenantId": "tenant_apex",
+      "baseSalaryMinor": 35000000,
+      "currency": "NGN",
+      "bankName": "Access Bank",
+      "accountNumberMasked": "••••••••8192",
+      "taxJurisdictionRuleId": "NG-LIRS-2026",
+      "payeTaxRatePercent": 7,
+      "pensionEmployeePercent": 8,
+      "pensionEmployerPercent": 10
+    },
+    {
+      "employeeId": "emp_04",
+      "tenantId": "tenant_apex",
+      "baseSalaryMinor": 65000000,
+      "currency": "NGN",
+      "bankName": "GTBank",
+      "accountNumberMasked": "••••••••3018",
+      "taxJurisdictionRuleId": "NG-LIRS-2026",
+      "payeTaxRatePercent": 11,
+      "pensionEmployeePercent": 8,
+      "pensionEmployerPercent": 10
+    }
+  ],
+  "payrollRuns": []
+}
